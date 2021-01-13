@@ -11,7 +11,6 @@ _ft_strlen:
 				inc rax                     ; increment rax
 				jmp .start_loop             ; jump to the start of the loop
 
-; return rax
 return:
-		ret
+		ret                                 ; return rax
 

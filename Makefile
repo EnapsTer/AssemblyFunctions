@@ -1,4 +1,4 @@
-SRCS		=	ft_strlen.s ft_strcpy.s
+SRCS		=	ft_strlen.s ft_strcpy.s ft_strcmp.s ft_write.s ft_read.s ft_strdup.s
 OBJS		=	$(SRCS:.s=.o)
 
 NASM		=	nasm
@@ -24,7 +24,8 @@ fclean:			clean
 re:				fclean $(NAME)
 
 test:			$(NAME)
-				@gcc $(FLAGS) $(NAME) -o $(TEST) test.c
+				@gcc $(NAME) -o $(TEST) test.c
 				@./$(TEST)
+				@make fclean
 
 .PHONY:			clean fclean re test
