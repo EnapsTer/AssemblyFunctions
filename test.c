@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <string.h>
 #include <stdio.h>
+#include <errno.h>
 
 size_t	ft_strlen(const char *s);
 char	*ft_strcpy(char *dst, const char *src);
@@ -135,14 +136,15 @@ void	test_strdup()
 
 int main(void)
 {
-//	test_strlen();
-//	printf("\n\n");
-//	test_strcpy();
-//	printf("\n\n");
-//	test_strcmp();
-//	printf("\n\n");
-//	test_write();
-//	printf("\n\n");
-//	test_read();
+	test_strlen();
+	printf("\n\n");
+	test_strcpy();
+	printf("\n\n");
+	test_strcmp();
+	printf("\n\n");
+	test_write();
+	printf("\n\n");
+	test_read();
+	printf("\n\n");
 	test_strdup();
 }

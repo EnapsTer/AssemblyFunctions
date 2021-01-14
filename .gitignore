@@ -3,3 +3,4 @@ temp*
 *.o
 *.a
 .idea/
+tester/
