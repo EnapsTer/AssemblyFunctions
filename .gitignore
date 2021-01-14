@@ -4,3 +4,4 @@ temp*
 *.a
 .idea/
 tester/
+.DS_Store
