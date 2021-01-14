@@ -24,7 +24,7 @@ fclean:			clean
 re:				fclean $(NAME)
 
 test:			$(NAME)
-				@gcc $(NAME) -o $(TEST) test.c
+				@gcc -L. -lasm -o $(TEST) main.c
 				@./$(TEST)
 				@make fclean
 
